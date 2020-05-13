@@ -1,0 +1,83 @@
+.project {
+  transition: var(--transition);
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.project:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+.project img {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  object-fit: cover;
+}
+.footer {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.url {
+  font-size: 1.75rem;
+  padding: 0rem 0.63rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 0.5rem solid var(--clr-white);
+  transition: var(--transition);
+  transform: translateY(-50%);
+  background: var(--clr-primary-9);
+  color: var(--clr-primary-5);
+}
+.url:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-9);
+}
+.info {
+  margin-top: -1.25rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.info h4 {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+.info p {
+  margin-bottom: 0;
+  background: var(--clr-grey-9);
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+.footer p {
+  color: var(--clr-grey-5);
+}
+.github .github-icon {
+  color: var(--clr-grey-5);
+}
+.github {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--clr-primary-10);
+  padding: 0.75rem 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.github a {
+  text-transform: capitalize;
+  color: var(--clr-primary);
+  transition: var(--transition);
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+.github a:hover {
+  color: var(--clr-primary-1);
+}

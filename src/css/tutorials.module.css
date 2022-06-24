@@ -1,0 +1,24 @@
+.tutorial {
+  min-height: calc(100vh - 18rem);
+  padding: 4rem 0;
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.video {
+  overflow: hidden;
+  /* // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  padding-top: 56.25%;
+  position: relative;
+  border-radius: var(--radius);
+}
+
+.video iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
